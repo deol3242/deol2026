@@ -1,0 +1,13 @@
+---
+- name: A very simple task
+  hosts: all
+  tasks:
+    - name: Print effective user running the ansible tasks
+      debug: var=ansible_user_id
+
+    - name: Print kernel release info
+      debug: 
+        var=ansible_facts['kernel']
+    - name: Print address
+      debug:
+        var=ansible_facts['default_ipv4']['address']
