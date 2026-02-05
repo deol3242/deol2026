@@ -1,3 +1,5 @@
+localhost ansible_connection=local
+192.168.2.97
+[home]
 192.168.2.60
 192.168.2.110
-192,168.2.97
